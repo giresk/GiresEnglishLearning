@@ -326,3 +326,1962 @@
       display: inline-flex;
       align-items: center;
       gap: 0.2rem;
+      color: #a5b4fc;
+    }
+
+    .tabs-row {
+      margin-top: 1.4rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+
+    .tab-chip {
+      font-size: 0.8rem;
+      padding: 0.25rem 0.7rem;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.7);
+      color: #e5e7eb;
+    }
+
+    .badge-light {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      background: rgba(34, 197, 94, 0.1);
+      color: #bbf7d0;
+      border-radius: 999px;
+      padding: 0.2rem 0.55rem;
+      font-size: 0.75rem;
+      margin-top: 0.6rem;
+    }
+
+    section.tool-section {
+      margin-top: 1.6rem;
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 1.5rem;
+      padding: 1.3rem 1.4rem 1.4rem;
+      box-shadow: var(--shadow-soft);
+      border: 1px solid rgba(148, 163, 184, 0.18);
+      display: none;
+    }
+
+    section.tool-section.active-section {
+      display: block;
+    }
+
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 0.75rem;
+      margin-bottom: 0.9rem;
+    }
+
+    .section-header h2 {
+      font-size: 1.05rem;
+    }
+
+    .section-header p {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    .section-header-right {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-align: right;
+    }
+
+    .label-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      align-items: center;
+      margin-bottom: 0.6rem;
+    }
+
+    .label-row label {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    select,
+    input[type="text"],
+    textarea,
+    input[type="email"] {
+      width: 100%;
+      border-radius: 0.75rem;
+      border: 1px solid var(--border);
+      padding: 0.45rem 0.7rem;
+      font-size: 0.9rem;
+      background: rgba(249, 250, 251, 0.95);
+      color: var(--text);
+    }
+
+    textarea {
+      min-height: 150px;
+      resize: vertical;
+      line-height: 1.5;
+    }
+
+    .inline-input {
+      width: auto;
+      min-width: 140px;
+    }
+
+    .btn-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      margin: 0.5rem 0 0.5rem;
+    }
+
+    .btn-sm {
+      padding: 0.35rem 0.8rem;
+      font-size: 0.8rem;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: #fff;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    .btn-sm.primary {
+      border-color: var(--accent);
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .btn-sm.soft {
+      background: var(--accent-soft);
+      border-color: transparent;
+      color: var(--accent-strong);
+    }
+
+    .btn-sm.danger {
+      border-color: rgba(220, 38, 38, 0.4);
+      color: var(--danger);
+      background: rgba(254, 242, 242, 0.8);
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.1rem 0.5rem;
+      border-radius: 999px;
+      font-size: 0.7rem;
+      background: var(--accent-soft);
+      color: var(--accent-strong);
+    }
+
+    .slider-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      align-items: center;
+      margin-top: 0.3rem;
+    }
+
+    input[type="range"] {
+      flex: 1;
+    }
+
+    .two-column {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.2fr);
+      gap: 1rem;
+      margin-top: 0.8rem;
+    }
+
+    .card-muted {
+      background: rgba(248, 250, 252, 0.95);
+      border-radius: 1rem;
+      border: 1px dashed rgba(148, 163, 184, 0.7);
+      padding: 0.85rem 0.9rem;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .analysis-block {
+      font-size: 0.85rem;
+      margin-top: 0.5rem;
+    }
+
+    .analysis-block strong {
+      font-weight: 600;
+    }
+
+    .compare-box {
+      background: rgba(248, 250, 252, 0.95);
+      border-radius: 1rem;
+      border: 1px solid var(--border);
+      padding: 0.8rem 0.9rem;
+      font-size: 0.85rem;
+      max-height: 230px;
+      overflow: auto;
+    }
+
+    .compare-title {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-bottom: 0.4rem;
+    }
+
+    .word-correct {
+      color: var(--success);
+    }
+
+    .word-spelling {
+      color: var(--warning);
+      text-decoration: underline dashed;
+    }
+
+    .word-wrong {
+      color: var(--danger);
+      text-decoration: underline;
+    }
+
+    .word-missing {
+      background: rgba(248, 113, 113, 0.1);
+      border-radius: 0.2rem;
+      padding: 0 0.1rem;
+      color: var(--danger);
+    }
+
+    .word-extra {
+      background: rgba(245, 158, 11, 0.08);
+      border-radius: 0.2rem;
+      padding: 0 0.1rem;
+      color: var(--warning);
+    }
+
+    .score-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      padding: 0.25rem 0.6rem;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      background: rgba(37, 99, 235, 0.08);
+      color: var(--accent-strong);
+      margin-top: 0.3rem;
+    }
+
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+      margin-top: 0.2rem;
+    }
+
+    .tag {
+      border-radius: 999px;
+      padding: 0.15rem 0.45rem;
+      font-size: 0.7rem;
+      border: 1px solid rgba(148, 163, 184, 0.7);
+      color: var(--text-muted);
+    }
+
+    .subtabs {
+      display: inline-flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+    }
+
+    .subtab-btn {
+      padding: 0.25rem 0.7rem;
+      font-size: 0.8rem;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: rgba(249, 250, 251, 0.95);
+      cursor: pointer;
+      color: var(--text-muted);
+    }
+
+    .subtab-btn.active {
+      border-color: var(--accent);
+      background: var(--accent-soft);
+      color: var(--accent-strong);
+    }
+
+    .subpanel {
+      margin-top: 0.8rem;
+    }
+
+    .hint-text {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-top: 0.3rem;
+    }
+
+    .muted {
+      color: var(--text-muted);
+      font-size: 0.8rem;
+    }
+
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 0.7rem;
+      margin-top: 0.8rem;
+      font-size: 0.85rem;
+    }
+
+    .stat-card {
+      background: rgba(248, 250, 252, 0.95);
+      border-radius: 1rem;
+      border: 1px solid var(--border);
+      padding: 0.7rem 0.8rem;
+    }
+
+    .stat-title {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      margin-bottom: 0.2rem;
+    }
+
+    .stat-main {
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .stat-sub {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      margin-top: 0.1rem;
+    }
+
+    .daily-box {
+      background: rgba(248, 250, 252, 0.95);
+      border-radius: 1.1rem;
+      border: 1px dashed rgba(148, 163, 184, 0.9);
+      padding: 0.9rem 1rem;
+      font-size: 0.85rem;
+    }
+
+    .daily-list {
+      margin-top: 0.5rem;
+      padding-left: 1rem;
+    }
+
+    .daily-list li {
+      margin-bottom: 0.25rem;
+    }
+
+    .rewriter-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.1fr);
+      gap: 0.8rem;
+      margin-top: 0.6rem;
+    }
+
+    footer {
+      max-width: 1100px;
+      margin: 1.6rem auto 0;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    @media (max-width: 900px) {
+      .layout-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        justify-content: flex-start;
+      }
+
+      .side-panel {
+        order: -1;
+      }
+
+      section.tool-section {
+        padding: 1rem 1rem 1.1rem;
+      }
+    }
+
+    @media (max-width: 650px) {
+      .two-column,
+      .rewriter-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      body {
+        padding: 0 0.7rem 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo-circle">Ge</div>
+      <div>
+        <div class="brand-text-title">Gires English</div>
+        <div class="brand-text-sub">Small, daily steps for better English writing</div>
+      </div>
+    </div>
+    <nav>
+      <button class="nav-btn active" data-target="home-section">Home</button>
+      <button class="nav-btn" data-target="dictation-section">Dictation</button>
+      <button class="nav-btn" data-target="practice-section">Practice</button>
+      <button class="nav-btn" data-target="dashboard-section">Dashboard</button>
+      <button class="nav-btn" data-target="daily-section">Daily</button>
+      <button class="nav-btn" data-target="settings-section">Rewriter</button>
+      <button class="toggle-theme" id="themeToggle" title="Toggle dark / light mode">
+        <span>🌙</span><span>Dark</span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <div class="layout-grid" id="home-section">
+      <section class="hero">
+        <h1><span>Gires English</span> – your quiet English practice space</h1>
+        <p>
+          Train your <strong>dictation, writing, grammar, spelling,</strong> and
+          <strong>sentence construction</strong> in a calm, simple workspace.
+          No ads, no noise – just practice.
+        </p>
+        <div class="pill-row">
+          <span class="pill">🎧 Dictation training</span>
+          <span class="pill">✍️ Clear sentence writing</span>
+          <span class="pill">🧠 Beginner-friendly grammar</span>
+          <span class="pill">📊 Simple progress tracking</span>
+        </div>
+
+        <div class="level-card">
+          <div>
+            <div style="font-size:0.85rem; font-weight:600; margin-bottom:0.2rem;">Choose your level</div>
+            <div class="levels">
+              <label class="level-chip">
+                <input type="radio" name="level" value="beginner" checked />
+                <span class="level-label">Beginner</span>
+              </label>
+              <label class="level-chip">
+                <input type="radio" name="level" value="intermediate" />
+                <span class="level-label">Intermediate</span>
+              </label>
+              <label class="level-chip">
+                <input type="radio" name="level" value="advanced" />
+                <span class="level-label">Advanced</span>
+              </label>
+            </div>
+          </div>
+          <div class="level-caption">
+            Exercises, vocabulary, and audio speed adapt to your level.
+          </div>
+        </div>
+
+        <div class="hero-actions">
+          <button class="btn-primary" id="startDictationFromHero">
+            🎧 Start Dictation
+          </button>
+          <button class="btn-ghost" id="startDailyFromHero">
+            ⏱ 5-minute Daily Practice
+          </button>
+        </div>
+      </section>
+
+      <aside class="side-panel">
+        <h2>Today’s overview</h2>
+        <small>
+          These numbers stay on your device only (saved in your browser).
+        </small>
+        <div class="side-metrics">
+          <div class="metric">
+            <div class="metric-label">Dictations done</div>
+            <div class="metric-value" id="statDictations">0</div>
+            <div class="metric-tag">🎧 Focus on listening</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Average dictation score</div>
+            <div class="metric-value" id="statAvgScore">–</div>
+            <div class="metric-tag">📊 Accuracy</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Spelling accuracy</div>
+            <div class="metric-value" id="statSpelling">–</div>
+            <div class="metric-tag">🔡 Words typed</div>
+          </div>
+          <div class="metric">
+            <div class="metric-label">Grammar questions</div>
+            <div class="metric-value" id="statGrammar">0</div>
+            <div class="metric-tag">🧩 Practice</div>
+          </div>
+        </div>
+
+        <div class="tabs-row">
+          <span class="tab-chip">Dictation workspace</span>
+          <span class="tab-chip">Sentence trainer</span>
+          <span class="tab-chip">Spelling drills</span>
+          <span class="tab-chip">Text rewriter</span>
+        </div>
+
+        <div class="badge-light">
+          ✅ Tip: Try one dictation + 5 spelling words every day.
+        </div>
+      </aside>
+    </div>
+
+    <!-- Dictation Section -->
+    <section class="tool-section active-section" id="dictation-section">
+      <div class="section-header">
+        <div>
+          <h2>Dictation Training Tool</h2>
+          <p>
+            Listen in short chunks, type what you hear, then check your spelling,
+            grammar, and missing / extra words.
+          </p>
+        </div>
+        <div class="section-header-right">
+          <div>Level: <span id="currentLevelLabel">Beginner</span></div>
+          <div class="muted">Chunks adapt to your level: 4 / 5 / 6 words.</div>
+        </div>
+      </div>
+
+      <div class="label-row">
+        <label for="dictationTopic">Topic</label>
+        <select id="dictationTopic" class="inline-input">
+          <option value="any">Random topic</option>
+          <option value="daily">Daily life</option>
+          <option value="school">School & Study</option>
+          <option value="work">Work & Career</option>
+          <option value="travel">Travel</option>
+        </select>
+        <span class="badge">Guided dictation (chunk-by-chunk)</span>
+      </div>
+
+      <div class="label-row">
+        <label>Audio speed</label>
+        <div class="slider-row">
+          <button class="btn-sm soft" data-speed-preset="slow">Slow</button>
+          <button class="btn-sm soft" data-speed-preset="medium">Medium</button>
+          <button class="btn-sm soft" data-speed-preset="fast">Fast</button>
+          <input type="range" id="dictationSpeed" min="0.6" max="1.6" step="0.1" value="0.9" />
+          <span class="muted" id="speedLabel">Speed: 90%</span>
+        </div>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn-sm primary" id="newDictationBtn">🎲 New dictation</button>
+        <button class="btn-sm" id="playDictationBtn">▶️ Play (guided)</button>
+        <button class="btn-sm" id="pauseDictationBtn">⏸ Pause</button>
+        <button class="btn-sm" id="replayDictationBtn">🔁 Replay chunk</button>
+        <button class="btn-sm danger" id="clearDictationBtn">🧹 Clear text</button>
+      </div>
+
+      <div class="two-column">
+        <div>
+          <label for="dictationInput" class="muted">
+            Dictation workspace (no spellcheck, no underlines)
+          </label>
+          <textarea id="dictationInput" spellcheck="false" autocomplete="off" autocorrect="off" autocapitalize="off"
+            placeholder="Listen carefully in small parts and type what you hear..."></textarea>
+          <div class="hint-text">
+            ✅ Each part is read twice. Use <strong>Pause</strong> and <strong>Replay chunk</strong> if you need more time.
+          </div>
+          <div class="btn-row">
+            <button class="btn-sm primary" id="checkDictationBtn">✅ Check my dictation</button>
+          </div>
+        </div>
+
+        <div>
+          <div class="card-muted">
+            <strong>Dictation info</strong>
+            <div id="dictationMeta" class="analysis-block">Click “New dictation” to generate a text.</div>
+            <div class="analysis-block" id="dictationChunkInfo">
+              Chunk: <span id="dictationChunkIndex">0</span> / <span id="dictationChunkTotal">0</span>
+            </div>
+            <div id="dictationScoreWrap" class="analysis-block" style="display:none;">
+              <div class="score-pill">
+                🔍 Score: <span id="dictationScore">0%</span>
+              </div>
+              <div class="tag-row">
+                <span class="tag">Spelling errors: <span id="statSpellErrors">0</span></span>
+                <span class="tag">Grammar / word choice: <span id="statGrammarErrors">0</span></span>
+                <span class="tag">Missing words: <span id="statMissingWords">0</span></span>
+                <span class="tag">Extra words: <span id="statExtraWords">0</span></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="compare-box" style="margin-top:0.6rem;">
+            <div class="compare-title">Original text vs your version</div>
+            <div class="muted" style="margin-bottom:0.25rem;">
+              ✅ Green = correct, 🟠 = spelling, 🔴 = wrong / grammar, 🔻 = missing, 🔺 = extra
+            </div>
+            <div style="font-size:0.82rem; margin-bottom:0.3rem; color:var(--text-muted);">
+              Original text
+            </div>
+            <div id="originalHighlighted"></div>
+            <div style="font-size:0.82rem; margin:0.5rem 0 0.3rem; color:var(--text-muted);">
+              Your text
+            </div>
+            <div id="userHighlighted"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Practice Section -->
+    <section class="tool-section" id="practice-section">
+      <div class="section-header">
+        <div>
+          <h2>Writing & Grammar Practice</h2>
+          <p>Practice sentence construction, spelling, and grammar step by step.</p>
+        </div>
+        <div class="section-header-right">
+          <div>Mode: Self-practice</div>
+          <div class="muted">Feedback is simple and friendly.</div>
+        </div>
+      </div>
+
+      <div class="label-row">
+        <label>Practice tool</label>
+        <div class="subtabs">
+          <button class="subtab-btn active" data-practice="sentence">Sentence trainer</button>
+          <button class="subtab-btn" data-practice="spelling">Spelling trainer</button>
+          <button class="subtab-btn" data-practice="grammar">Grammar exercises</button>
+        </div>
+      </div>
+
+      <!-- Sentence Trainer -->
+      <div class="subpanel" id="sentencePanel">
+        <div class="card-muted">
+          <strong>Sentence construction trainer</strong>
+          <div class="analysis-block">
+            Rewrite the sentence in <strong>clearer and simpler</strong> English. Then compare with the suggestion.
+          </div>
+        </div>
+        <div class="analysis-block" id="sentencePrompt" style="margin-top:0.6rem;">
+          Click “New sentence” to start.
+        </div>
+        <textarea id="sentenceInput" placeholder="Rewrite the sentence here..."></textarea>
+        <div class="btn-row">
+          <button class="btn-sm primary" id="newSentenceBtn">📝 New sentence</button>
+          <button class="btn-sm" id="checkSentenceBtn">✅ Show suggestion</button>
+        </div>
+        <div class="compare-box" style="margin-top:0.6rem;">
+          <div class="compare-title">Suggested clearer sentence</div>
+          <div id="sentenceSuggestion" class="muted">
+            Your rewrite can be different. Use this as one example.
+          </div>
+        </div>
+      </div>
+
+      <!-- Spelling Trainer -->
+      <div class="subpanel" id="spellingPanel" style="display:none;">
+        <div class="card-muted">
+          <strong>Spelling trainer</strong>
+          <div class="analysis-block">
+            Listen to the word, then type it. Focus on letters and sounds.
+          </div>
+        </div>
+        <div class="label-row" style="margin-top:0.6rem;">
+          <label>Word difficulty</label>
+          <select id="spellingLevelSelect" class="inline-input">
+            <option value="auto">Use main level (auto)</option>
+            <option value="beginner">Beginner words</option>
+            <option value="intermediate">Intermediate words</option>
+            <option value="advanced">Advanced words</option>
+          </select>
+          <span class="badge">Audio via browser voice</span>
+        </div>
+        <div class="analysis-block" id="spellingPrompt">
+          Click “New word” to start.
+        </div>
+        <input type="text" id="spellingInput" placeholder="Type the word you hear..." />
+        <div class="btn-row">
+          <button class="btn-sm primary" id="newSpellingBtn">🔡 New word</button>
+          <button class="btn-sm" id="playSpellingBtn">▶️ Play word</button>
+          <button class="btn-sm" id="checkSpellingBtn">✅ Check word</button>
+        </div>
+        <div class="hint-text" id="spellingFeedback"></div>
+      </div>
+
+      <!-- Grammar Trainer -->
+      <div class="subpanel" id="grammarPanel" style="display:none;">
+        <div class="card-muted">
+          <strong>Grammar exercise module</strong>
+          <div class="analysis-block">
+            Includes multiple-choice, fill-in-the-blank, and error-correction questions.
+          </div>
+        </div>
+        <div class="label-row" style="margin-top:0.6rem;">
+          <label>Grammar difficulty</label>
+          <select id="grammarLevelSelect" class="inline-input">
+            <option value="auto">Use main level (auto)</option>
+            <option value="beginner">Beginner grammar</option>
+            <option value="intermediate">Intermediate grammar</option>
+            <option value="advanced">Advanced grammar</option>
+          </select>
+        </div>
+        <div class="analysis-block" id="grammarQuestionText" style="margin-top:0.5rem;">
+          Click “New question” to start.
+        </div>
+        <div id="grammarAnswerArea" style="margin-top:0.4rem;"></div>
+        <div class="btn-row">
+          <button class="btn-sm primary" id="newGrammarBtn">🧩 New question</button>
+          <button class="btn-sm" id="checkGrammarBtn">✅ Check answer</button>
+        </div>
+        <div class="hint-text" id="grammarFeedback"></div>
+      </div>
+    </section>
+
+    <!-- Dashboard Section -->
+    <section class="tool-section" id="dashboard-section">
+      <div class="section-header">
+        <div>
+          <h2>Your progress dashboard</h2>
+          <p>See where you make more mistakes and what to practice next.</p>
+        </div>
+        <div class="section-header-right">
+          <div>Data stored locally</div>
+          <div class="muted">You can reset everything at any time.</div>
+        </div>
+      </div>
+
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-title">Dictations completed</div>
+          <div class="stat-main" id="dashDictations">0</div>
+          <div class="stat-sub">Listening + writing practice</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-title">Average dictation score</div>
+          <div class="stat-main" id="dashAvgScore">–</div>
+          <div class="stat-sub">More green words = better score</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-title">Spelling accuracy</div>
+          <div class="stat-main" id="dashSpellAccuracy">–</div>
+          <div class="stat-sub">Based on spelling trainer</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-title">Grammar questions</div>
+          <div class="stat-main" id="dashGrammarQs">0</div>
+          <div class="stat-sub">MCQs + fill-in questions</div>
+        </div>
+      </div>
+
+      <div class="two-column" style="margin-top:1rem;">
+        <div class="stat-card">
+          <div class="stat-title">Common mistake types (dictation)</div>
+          <ul style="padding-left:1rem; margin-top:0.2rem; font-size:0.85rem;">
+            <li>Spelling issues: <span id="dashSpellErrors">0</span></li>
+            <li>Grammar / wrong words: <span id="dashGrammarErrors">0</span></li>
+            <li>Missing words: <span id="dashMissingWords">0</span></li>
+            <li>Extra words: <span id="dashExtraWords">0</span></li>
+          </ul>
+          <div class="stat-sub" style="margin-top:0.4rem;">
+            Tip: Focus on one area at a time (for example, spelling only).
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-title">Suggestions</div>
+          <div class="stat-sub" id="dashSuggestions" style="margin-top:0.3rem;">
+            Do 1 dictation + 5 spelling words + 2 grammar questions today.
+          </div>
+          <div class="btn-row" style="margin-top:0.6rem;">
+            <button class="btn-sm" id="resetProgressBtn">♻️ Reset all progress</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Daily Practice Section -->
+    <section class="tool-section" id="daily-section">
+      <div class="section-header">
+        <div>
+          <h2>Daily Practice Mode</h2>
+          <p>Short daily set: 1 dictation, 1 grammar, 1 spelling word.</p>
+        </div>
+        <div class="section-header-right">
+          <div id="dailyDateLabel">Today</div>
+          <div class="muted">Simple routine you can keep.</div>
+        </div>
+      </div>
+
+      <div class="daily-box">
+        <strong>Today’s mini plan</strong>
+        <ul class="daily-list" id="dailyList">
+          <li>1 short dictation</li>
+          <li>1 grammar question</li>
+          <li>1 spelling word</li>
+        </ul>
+        <div class="btn-row" style="margin-top:0.6rem;">
+          <button class="btn-sm primary" id="generateDailyBtn">🔄 Generate today’s practice</button>
+          <button class="btn-sm" id="gotoDailyDictationBtn" disabled>🎧 Start dictation</button>
+          <button class="btn-sm" id="gotoDailySpellingBtn" disabled>🔡 Start spelling</button>
+          <button class="btn-sm" id="gotoDailyGrammarBtn" disabled>🧩 Start grammar</button>
+        </div>
+        <div class="hint-text">
+          Optionally, allow browser notifications to remind you while the page is open (simple and local).
+        </div>
+      </div>
+    </section>
+
+    <!-- Rewriter / Settings Section -->
+    <section class="tool-section" id="settings-section">
+      <div class="section-header">
+        <div>
+          <h2>Simple English Text Rewriter</h2>
+          <p>Paste a heavy sentence and get a clearer, simpler version.</p>
+        </div>
+        <div class="section-header-right">
+          <div>Mode: Offline friendly</div>
+          <div class="muted">
+            Uses rule-based simplification, not an online AI model.
+          </div>
+        </div>
+      </div>
+
+      <div class="rewriter-grid">
+        <div>
+          <label class="muted" for="rewriterInput">
+            Original sentence or short paragraph
+          </label>
+          <textarea id="rewriterInput"
+            placeholder="Paste a long or confusing sentence here. Example: In order to effectively achieve our goals, we must utilize all available resources, which can sometimes be a little bit difficult for students."></textarea>
+          <div class="btn-row">
+            <button class="btn-sm primary" id="rewriteBtn">✨ Rewrite in simple English</button>
+            <button class="btn-sm" id="clearRewriteBtn">🧹 Clear</button>
+          </div>
+        </div>
+        <div>
+          <label class="muted">Simplified version</label>
+          <div class="compare-box" id="rewriterOutput">
+            The simpler version will appear here. Sentences are shortened and some complex words are replaced with easier ones.
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>Gires English – free, beginner-friendly English writing practice.</span>
+    <span>Host on GitHub Pages / Netlify / Vercel – static HTML only.</span>
+  </footer>
+
+  <script>
+    // ---------- Basic state & storage helpers ----------
+    const state = {
+      level: "beginner",
+      dictation: null,
+      daily: null,
+      spellingWord: null,
+      grammarQuestion: null,
+
+      // guided dictation playback
+      dictationChunks: [],
+      currentChunkIndex: 0,
+      lastChunkIndex: 0,
+      dictationPaused: false,
+
+      spellingStats: { asked: 0, correct: 0 },
+      progress: {
+        dictationsDone: 0,
+        totalDictationScore: 0,
+        dictationSpellErrors: 0,
+        dictationGrammarErrors: 0,
+        dictationMissing: 0,
+        dictationExtra: 0,
+        spellingAsked: 0,
+        spellingCorrect: 0,
+        grammarAnswered: 0,
+        grammarCorrect: 0,
+      },
+    };
+
+    function loadFromStorage() {
+      try {
+        const savedLevel = localStorage.getItem("ge_level");
+        if (savedLevel && ["beginner", "intermediate", "advanced"].includes(savedLevel)) {
+          state.level = savedLevel;
+          const radio = document.querySelector(
+            'input[name="level"][value="' + savedLevel + '"]'
+          );
+          if (radio) radio.checked = true;
+        }
+        const savedProgress = localStorage.getItem("ge_progress");
+        if (savedProgress) {
+          Object.assign(state.progress, JSON.parse(savedProgress));
+        }
+        const savedDaily = localStorage.getItem("ge_daily");
+        if (savedDaily) {
+          state.daily = JSON.parse(savedDaily);
+        }
+        const savedTheme = localStorage.getItem("ge_theme");
+        if (savedTheme === "dark") {
+          document.documentElement.classList.add("dark");
+          const toggle = document.getElementById("themeToggle");
+          if (toggle) toggle.innerHTML = "<span>☀️</span><span>Light</span>";
+        }
+      } catch (e) {
+        console.warn("Could not load saved data", e);
+      }
+    }
+
+    function saveProgress() {
+      try {
+        localStorage.setItem("ge_progress", JSON.stringify(state.progress));
+      } catch (e) { }
+    }
+
+    function saveLevel() {
+      try {
+        localStorage.setItem("ge_level", state.level);
+      } catch (e) { }
+    }
+
+    function saveDaily() {
+      try {
+        localStorage.setItem("ge_daily", JSON.stringify(state.daily));
+      } catch (e) { }
+    }
+
+    // ---------- Data banks ----------
+    const dictationBank = [
+      // Beginner – short, simple
+      {
+        id: "b1",
+        level: "beginner",
+        topic: "daily",
+        title: "Morning routine",
+        text: "Every morning I wake up at seven o'clock. I drink a glass of water and brush my teeth. Then I make a simple breakfast and check my messages.",
+      },
+      {
+        id: "b2",
+        level: "beginner",
+        topic: "school",
+        title: "First day at school",
+        text: "Today is my first day at a new school. I feel a little nervous but also excited. I hope to meet kind teachers and friendly classmates.",
+      },
+      {
+        id: "b3",
+        level: "beginner",
+        topic: "work",
+        title: "New job",
+        text: "I started a new job in a small office. My manager is patient and explains my tasks clearly. I want to learn quickly and do my work well.",
+      },
+      {
+        id: "b4",
+        level: "beginner",
+        topic: "travel",
+        title: "Taking the bus",
+        text: "I take the bus to the city center. I always check the time table and keep my ticket in my pocket. The trip is short but it can be crowded.",
+      },
+      // Intermediate
+      {
+        id: "i1",
+        level: "intermediate",
+        topic: "daily",
+        title: "Balancing study and rest",
+        text: "Balancing study and rest is not always easy. Many students feel guilty when they relax, even though rest helps them focus better the next day.",
+      },
+      {
+        id: "i2",
+        level: "intermediate",
+        topic: "school",
+        title: "Group projects",
+        text: "Working on group projects can be challenging. Some people like to lead, while others prefer to follow. Clear communication helps everyone stay on the same page.",
+      },
+      {
+        id: "i3",
+        level: "intermediate",
+        topic: "work",
+        title: "Remote work",
+        text: "Remote work allows people to complete their tasks from home. It saves travel time, but it can also make it harder to separate work and personal life.",
+      },
+      {
+        id: "i4",
+        level: "intermediate",
+        topic: "travel",
+        title: "Unexpected delay",
+        text: "Our flight was delayed for three hours because of bad weather. At first we felt frustrated, but we understood that safety was more important than speed.",
+      },
+      // Advanced
+      {
+        id: "a1",
+        level: "advanced",
+        topic: "daily",
+        title: "Managing distractions",
+        text: "In a world full of notifications and constant updates, managing distractions has become a crucial skill. People who control their attention often achieve deeper work and more meaningful results.",
+      },
+      {
+        id: "a2",
+        level: "advanced",
+        topic: "work",
+        title: "Constructive feedback",
+        text: "Constructive feedback is not just criticism. It should highlight both strengths and areas for improvement, while encouraging the person to grow instead of making them feel discouraged.",
+      },
+      {
+        id: "a3",
+        level: "advanced",
+        topic: "school",
+        title: "Independent learning",
+        text: "Independent learning requires discipline and curiosity. Students must plan their time, search for resources, and ask questions, instead of waiting for the teacher to give every answer.",
+      },
+      {
+        id: "a4",
+        level: "advanced",
+        topic: "travel",
+        title: "Cultural awareness",
+        text: "Traveling to a new country can be exciting, but it also requires cultural awareness. Understanding local customs reduces misunderstandings and shows respect to the people who live there.",
+      },
+    ];
+
+    const sentenceBank = {
+      beginner: [
+        {
+          bad: "In order to be able to finish the work, we must try to use all of the tools that are possibly available to us.",
+          good: "To finish the work, we should use all the tools we have.",
+          tip: "Remove extra words like 'in order to' and 'possibly'.",
+        },
+        {
+          bad: "The teacher gave to us a lot of homework which was very difficult and complicated for us to understand.",
+          good: "The teacher gave us a lot of homework that was hard to understand.",
+          tip: "Keep the sentence simple and use common words like 'hard'.",
+        },
+      ],
+      intermediate: [
+        {
+          bad: "The meeting that was held yesterday by the manager was extremely long and made everyone feel very tired and bored.",
+          good: "The manager's meeting yesterday was very long and made everyone feel tired and bored.",
+          tip: "Avoid repeating words and cut unnecessary details.",
+        },
+        {
+          bad: "Students who do not manage their time in a good way often find themselves in situations where they are stressed.",
+          good: "Students who do not manage their time well often feel stressed.",
+          tip: "Use shorter, direct phrases like 'manage their time well'.",
+        },
+      ],
+      advanced: [
+        {
+          bad: "The company is currently in the process of implementing several new strategies which are designed to improve overall efficiency and productivity.",
+          good: "The company is implementing new strategies to improve efficiency and productivity.",
+          tip: "Change long phrases like 'in the process of implementing' to 'is implementing'.",
+        },
+        {
+          bad: "Because of the fact that the project was not properly planned, there were many unexpected problems that appeared later.",
+          good: "Because the project was not planned well, many unexpected problems appeared later.",
+          tip: "Replace 'because of the fact that' with 'because'.",
+        },
+      ],
+    };
+
+    const spellingWords = {
+      beginner: ["simple", "family", "morning", "student", "teacher", "travel", "ticket", "message", "office", "practice"],
+      intermediate: ["balance", "project", "communication", "protect", "culture", "sentence", "example", "challenge", "resource", "routine"],
+      advanced: ["efficiency", "curiosity", "distraction", "constructive", "independent", "frustrated", "encourage", "discipline", "professionally", "confidence"],
+    };
+
+    const grammarQuestions = {
+      beginner: [
+        {
+          id: "gb1",
+          type: "mcq",
+          question: "Choose the correct sentence.",
+          options: [
+            "She go to school every day.",
+            "She goes to school every day.",
+            "She going to school every day.",
+          ],
+          answerIndex: 1,
+          explanation: "For 'she', use 'goes', not 'go'.",
+        },
+        {
+          id: "gb2",
+          type: "fill",
+          question: "I ___ breakfast at seven o'clock.",
+          placeholder: "Type one verb",
+          answer: "have",
+          explanation: "We normally say 'have breakfast'.",
+        },
+        {
+          id: "gb3",
+          type: "error",
+          question: "Find and correct the error:",
+          sentence: "He don't like black coffee.",
+          correction: "He doesn't like black coffee.",
+          explanation: "Use 'doesn't' with 'he'.",
+        },
+      ],
+      intermediate: [
+        {
+          id: "gi1",
+          type: "mcq",
+          question: "Choose the best sentence.",
+          options: [
+            "If I will have time, I will call you.",
+            "If I have time, I will call you.",
+            "If I am having time, I will call you.",
+          ],
+          answerIndex: 1,
+          explanation: "In the first conditional, use 'If + present simple, will + verb'.",
+        },
+        {
+          id: "gi2",
+          type: "fill",
+          question: "Complete: She has worked here ___ five years.",
+          placeholder: "for / since / from",
+          answer: "for",
+          explanation: "Use 'for' with a period of time.",
+        },
+        {
+          id: "gi3",
+          type: "error",
+          question: "Fix the sentence:",
+          sentence: "They was late for the meeting.",
+          correction: "They were late for the meeting.",
+          explanation: "Use 'were' with 'they'.",
+        },
+      ],
+      advanced: [
+        {
+          id: "ga1",
+          type: "mcq",
+          question: "Choose the sentence with correct word order.",
+          options: [
+            "Rarely I have seen such a motivated team.",
+            "I rarely have seen such a motivated team.",
+            "Rarely have I seen such a motivated team.",
+          ],
+          answerIndex: 2,
+          explanation: "After negative adverbs like 'rarely', invert the subject and auxiliary: 'Rarely have I seen...'",
+        },
+        {
+          id: "ga2",
+          type: "fill",
+          question: "Complete: The report, ___ was finished yesterday, will be shared tomorrow.",
+          placeholder: "which / what / who",
+          answer: "which",
+          explanation: "Use 'which' for things (the report).",
+        },
+        {
+          id: "ga3",
+          type: "error",
+          question: "Fix the sentence:",
+          sentence: "If I knew about the problem, I would have helped.",
+          correction: "If I had known about the problem, I would have helped.",
+          explanation: "Third conditional: 'If I had known... I would have...'",
+        },
+      ],
+    };
+
+    const dailyDictations = [
+      "Take a deep breath and start your practice.",
+      "Small steps every day will improve your English.",
+      "Do not rush; listen carefully and write calmly.",
+    ];
+
+    // ---------- Utility functions ----------
+    function getCurrentLevel() {
+      return state.level || "beginner";
+    }
+
+    function pickRandom(arr) {
+      return arr[Math.floor(Math.random() * arr.length)];
+    }
+
+    function filterDictations(level, topic) {
+      return dictationBank.filter((d) => {
+        const levelMatch = d.level === level;
+        const topicMatch = topic === "any" || d.topic === topic;
+        return levelMatch && topicMatch;
+      });
+    }
+
+    function normalizeTextForCompare(text) {
+      return text
+        .toLowerCase()
+        .replace(/[“”‘’]/g, "'")
+        .replace(/[^a-z0-9'\s]/g, " ")
+        .replace(/\s+/g, " ")
+        .trim();
+    }
+
+    function tokenizeWords(text) {
+      const norm = normalizeTextForCompare(text);
+      if (!norm) return [];
+      return norm.split(" ");
+    }
+
+    function editDistance(a, b) {
+      const m = a.length;
+      const n = b.length;
+      const dp = Array.from({ length: m + 1 }, () => new Array(n + 1).fill(0));
+      for (let i = 0; i <= m; i++) dp[i][0] = i;
+      for (let j = 0; j <= n; j++) dp[0][j] = j;
+      for (let i = 1; i <= m; i++) {
+        for (let j = 1; j <= n; j++) {
+          const cost = a[i - 1] === b[j - 1] ? 0 : 1;
+          dp[i][j] = Math.min(
+            dp[i - 1][j] + 1,
+            dp[i][j - 1] + 1,
+            dp[i - 1][j - 1] + cost
+          );
+        }
+      }
+      return dp[m][n];
+    }
+
+    function analyzeDictation(originalText, userText) {
+      const origWords = tokenizeWords(originalText);
+      const userWords = tokenizeWords(userText);
+      let i = 0;
+      let j = 0;
+      const steps = [];
+
+      while (i < origWords.length || j < userWords.length) {
+        const ow = origWords[i];
+        const uw = userWords[j];
+
+        if (ow && uw && ow === uw) {
+          steps.push({ origWord: ow, userWord: uw, type: "correct" });
+          i++;
+          j++;
+          continue;
+        }
+
+        if (ow && uw && editDistance(ow, uw) > 0 && editDistance(ow, uw) <= 2) {
+          steps.push({ origWord: ow, userWord: uw, type: "spelling" });
+          i++;
+          j++;
+          continue;
+        }
+
+        if (uw && origWords[i] && userWords[j + 1] === origWords[i]) {
+          steps.push({ origWord: null, userWord: uw, type: "extra" });
+          j++;
+          continue;
+        }
+
+        if (ow && userWords[j] && origWords[i + 1] === userWords[j]) {
+          steps.push({ origWord: ow, userWord: null, type: "missing" });
+          i++;
+          continue;
+        }
+
+        if (ow && uw) {
+          steps.push({ origWord: ow, userWord: uw, type: "wrong" });
+          i++;
+          j++;
+          continue;
+        }
+
+        if (ow && !uw) {
+          steps.push({ origWord: ow, userWord: null, type: "missing" });
+          i++;
+          continue;
+        }
+
+        if (!ow && uw) {
+          steps.push({ origWord: null, userWord: uw, type: "extra" });
+          j++;
+          continue;
+        }
+      }
+
+      let correct = 0;
+      let spelling = 0;
+      let wrong = 0;
+      let missing = 0;
+      let extra = 0;
+
+      steps.forEach((s) => {
+        if (s.type === "correct") correct++;
+        else if (s.type === "spelling") spelling++;
+        else if (s.type === "wrong") wrong++;
+        else if (s.type === "missing") missing++;
+        else if (s.type === "extra") extra++;
+      });
+
+      const totalWords = origWords.length || 1;
+      const score = Math.round((correct / totalWords) * 100);
+
+      return {
+        steps,
+        stats: { correct, spelling, wrong, missing, extra, totalWords, score },
+      };
+    }
+
+    function renderDictationComparison(analysis, originalText, userText) {
+      const originalContainer = document.getElementById("originalHighlighted");
+      const userContainer = document.getElementById("userHighlighted");
+      if (!originalContainer || !userContainer) return;
+
+      let originalHtml = "";
+      let userHtml = "";
+
+      analysis.steps.forEach((s, idx) => {
+        if (s.origWord) {
+          let cls = "";
+          if (s.type === "correct") cls = "word-correct";
+          else if (s.type === "spelling") cls = "word-spelling";
+          else if (s.type === "wrong") cls = "word-wrong";
+          else if (s.type === "missing") cls = "word-missing";
+
+          originalHtml +=
+            '<span class="' +
+            cls +
+            '">' +
+            s.origWord +
+            "</span>" +
+            (idx < analysis.steps.length - 1 ? " " : "");
+        }
+        if (s.userWord) {
+          let clsU = "";
+          if (s.type === "correct") clsU = "word-correct";
+          else if (s.type === "spelling") clsU = "word-spelling";
+          else if (s.type === "wrong") clsU = "word-wrong";
+          else if (s.type === "extra") clsU = "word-extra";
+
+          userHtml +=
+            '<span class="' +
+            clsU +
+            '">' +
+            s.userWord +
+            "</span>" +
+            (idx < analysis.steps.length - 1 ? " " : "");
+        }
+      });
+
+      originalContainer.innerHTML = originalHtml || "<span class='muted'>No dictation yet.</span>";
+      userContainer.innerHTML = userHtml || "<span class='muted'>No answer yet.</span>";
+    }
+
+    function updateDictationStatsOnProgress(stats) {
+      state.progress.dictationsDone += 1;
+      state.progress.totalDictationScore += stats.score;
+      state.progress.dictationSpellErrors += stats.spelling;
+      state.progress.dictationGrammarErrors += stats.wrong;
+      state.progress.dictationMissing += stats.missing;
+      state.progress.dictationExtra += stats.extra;
+      saveProgress();
+      updateTopStats();
+      updateDashboard();
+    }
+
+    function updateTopStats() {
+      const p = state.progress;
+      const dictEl = document.getElementById("statDictations");
+      const avgEl = document.getElementById("statAvgScore");
+      const spellEl = document.getElementById("statSpelling");
+      const grammarEl = document.getElementById("statGrammar");
+
+      if (dictEl) dictEl.textContent = p.dictationsDone;
+      if (avgEl) {
+        if (p.dictationsDone > 0) {
+          avgEl.textContent =
+            Math.round(p.totalDictationScore / p.dictationsDone) + "%";
+        } else avgEl.textContent = "–";
+      }
+      if (spellEl) {
+        if (p.spellingAsked > 0) {
+          spellEl.textContent =
+            Math.round((p.spellingCorrect / p.spellingAsked) * 100) + "%";
+        } else spellEl.textContent = "–";
+      }
+      if (grammarEl) grammarEl.textContent = p.grammarAnswered;
+    }
+
+    function updateDashboard() {
+      const p = state.progress;
+
+      const d1 = document.getElementById("dashDictations");
+      const d2 = document.getElementById("dashAvgScore");
+      const d3 = document.getElementById("dashSpellAccuracy");
+      const d4 = document.getElementById("dashGrammarQs");
+
+      const sSpell = document.getElementById("dashSpellErrors");
+      const sGram = document.getElementById("dashGrammarErrors");
+      const sMiss = document.getElementById("dashMissingWords");
+      const sExtra = document.getElementById("dashExtraWords");
+
+      if (d1) d1.textContent = p.dictationsDone;
+      if (d2) {
+        if (p.dictationsDone > 0) {
+          d2.textContent =
+            Math.round(p.totalDictationScore / p.dictationsDone) + "%";
+        } else d2.textContent = "–";
+      }
+      if (d3) {
+        if (p.spellingAsked > 0) {
+          d3.textContent =
+            Math.round((p.spellingCorrect / p.spellingAsked) * 100) + "%";
+        } else d3.textContent = "–";
+      }
+      if (d4) d4.textContent = p.grammarAnswered;
+
+      if (sSpell) sSpell.textContent = p.dictationSpellErrors;
+      if (sGram) sGram.textContent = p.dictationGrammarErrors;
+      if (sMiss) sMiss.textContent = p.dictationMissing;
+      if (sExtra) sExtra.textContent = p.dictationExtra;
+
+      const sug = document.getElementById("dashSuggestions");
+      if (sug) {
+        if (p.dictationsDone === 0) {
+          sug.textContent =
+            "Start with one short dictation and five beginner spelling words.";
+        } else if (p.dictationSpellErrors > p.dictationGrammarErrors) {
+          sug.textContent =
+            "You make more spelling mistakes. Use the Spelling Trainer for 10 minutes.";
+        } else if (p.dictationMissing > p.dictationExtra) {
+          sug.textContent =
+            "You skip words sometimes. Listen slowly and pause the dictation if needed.";
+        } else {
+          sug.textContent =
+            "Great job! Keep mixing dictation, spelling, and grammar questions.";
+        }
+      }
+    }
+
+    // ---------- Speech helpers ----------
+    function speakText(text, rate) {
+      if (!("speechSynthesis" in window)) {
+        alert(
+          "Your browser does not support speech synthesis. Please use a modern browser like Chrome or Edge."
+        );
+        return;
+      }
+      window.speechSynthesis.cancel();
+      const utter = new SpeechSynthesisUtterance(text);
+      utter.rate = rate || 0.9;
+      utter.lang = "en-US";
+      window.speechSynthesis.speak(utter);
+    }
+
+    // ---------- Guided dictation helpers ----------
+    function buildDictationChunks(text, maxWordsPerChunk) {
+      const words = text.split(/\s+/).filter(Boolean);
+      const chunks = [];
+      for (let i = 0; i < words.length; i += maxWordsPerChunk) {
+        chunks.push(words.slice(i, i + maxWordsPerChunk).join(" "));
+      }
+      return chunks;
+    }
+
+    function getChunkSizeForLevel(level) {
+      if (level === "beginner") return 4;
+      if (level === "intermediate") return 5;
+      return 6; // advanced
+    }
+
+    function startGuidedDictation(fromChunkIndex = null) {
+      if (!state.dictation) {
+        alert("Please generate a dictation first.");
+        return;
+      }
+
+      if (!state.dictationChunks || !state.dictationChunks.length) {
+        const level = state.dictation.level || getCurrentLevel();
+        const chunkSize = getChunkSizeForLevel(level);
+        state.dictationChunks = buildDictationChunks(state.dictation.text, chunkSize);
+      }
+
+      if (fromChunkIndex === null) {
+        state.currentChunkIndex = 0;
+      } else {
+        state.currentChunkIndex = Math.max(
+          0,
+          Math.min(fromChunkIndex, state.dictationChunks.length - 1)
+        );
+      }
+
+      state.dictationPaused = false;
+      playNextDictationChunk();
+    }
+
+    function playNextDictationChunk() {
+      if (state.dictationPaused) return;
+      if (!state.dictationChunks || !state.dictationChunks.length) return;
+
+      const idx = state.currentChunkIndex;
+      const chunk = state.dictationChunks[idx];
+      if (!chunk) {
+        return;
+      }
+
+      state.lastChunkIndex = idx;
+
+      const speedSlider = document.getElementById("dictationSpeed");
+      const rate = speedSlider ? parseFloat(speedSlider.value) || 0.9 : 0.9;
+
+      // update chunk info UI
+      const idxEl = document.getElementById("dictationChunkIndex");
+      const totalEl = document.getElementById("dictationChunkTotal");
+      if (idxEl) idxEl.textContent = idx + 1;
+      if (totalEl) totalEl.textContent = state.dictationChunks.length;
+
+      let repeatCount = 0;
+
+      function speakChunkOnce() {
+        if (state.dictationPaused) {
+          if ("speechSynthesis" in window) window.speechSynthesis.cancel();
+          return;
+        }
+        const utter = new SpeechSynthesisUtterance(chunk);
+        utter.rate = rate;
+        utter.lang = "en-US";
+
+        utter.onend = () => {
+          if (state.dictationPaused) return;
+
+          repeatCount++;
+          if (repeatCount < 2) {
+            speakChunkOnce(); // second time
+          } else {
+            state.currentChunkIndex++;
+            if (state.currentChunkIndex < state.dictationChunks.length) {
+              setTimeout(() => {
+                if (!state.dictationPaused) {
+                  playNextDictationChunk();
+                }
+              }, 700); // pause between chunks
+            }
+          }
+        };
+
+        if ("speechSynthesis" in window) {
+          window.speechSynthesis.cancel();
+          window.speechSynthesis.speak(utter);
+        }
+      }
+
+      speakChunkOnce();
+    }
+
+    function replayCurrentChunk() {
+      if (!state.dictation) {
+        alert("Please generate a dictation first.");
+        return;
+      }
+
+      if (!state.dictationChunks || !state.dictationChunks.length) {
+        const level = state.dictation.level || getCurrentLevel();
+        const chunkSize = getChunkSizeForLevel(level);
+        state.dictationChunks = buildDictationChunks(state.dictation.text, chunkSize);
+      }
+
+      const idx =
+        state.lastChunkIndex != null
+          ? state.lastChunkIndex
+          : state.currentChunkIndex || 0;
+
+      state.dictationPaused = false;
+      state.currentChunkIndex = Math.max(
+        0,
+        Math.min(idx, state.dictationChunks.length - 1)
+      );
+
+      playNextDictationChunk();
+    }
+
+    function pauseDictation() {
+      state.dictationPaused = true;
+      if ("speechSynthesis" in window) {
+        window.speechSynthesis.cancel();
+      }
+    }
+
+    // ---------- Dictation logic ----------
+    function newDictation() {
+      const level = getCurrentLevel();
+      const topicSelect = document.getElementById("dictationTopic");
+      const topic = topicSelect ? topicSelect.value : "any";
+      const candidates = filterDictations(level, topic);
+
+      if (!candidates.length) {
+        alert("No dictations found for this level and topic. Using random.");
+        state.dictation = pickRandom(dictationBank);
+      } else {
+        state.dictation = pickRandom(candidates);
+      }
+
+      // reset guided playback state
+      state.dictationChunks = [];
+      state.currentChunkIndex = 0;
+      state.lastChunkIndex = 0;
+      state.dictationPaused = false;
+
+      const meta = document.getElementById("dictationMeta");
+      if (meta && state.dictation) {
+        meta.innerHTML =
+          "<strong>Title:</strong> " +
+          state.dictation.title +
+          "<br><strong>Level:</strong> " +
+          state.dictation.level.charAt(0).toUpperCase() +
+          state.dictation.level.slice(1) +
+          " · <strong>Topic:</strong> " +
+          state.dictation.topic;
+      }
+      const input = document.getElementById("dictationInput");
+      if (input) {
+        input.value = "";
+        input.focus();
+      }
+      document.getElementById("dictationScoreWrap").style.display = "none";
+      document.getElementById("originalHighlighted").innerHTML =
+        "<span class='muted'>Play the dictation and type what you hear.</span>";
+      document.getElementById("userHighlighted").innerHTML =
+        "<span class='muted'>Your answer will appear here after checking.</span>";
+      const idxEl = document.getElementById("dictationChunkIndex");
+      const totalEl = document.getElementById("dictationChunkTotal");
+      if (idxEl) idxEl.textContent = "0";
+      if (totalEl) totalEl.textContent = "0";
+    }
+
+    function checkDictation() {
+      if (!state.dictation) {
+        alert("Please generate a dictation first.");
+        return;
+      }
+      const input = document.getElementById("dictationInput");
+      if (!input) return;
+      const userText = input.value.trim();
+      if (!userText) {
+        alert("Please type your dictation first.");
+        return;
+      }
+      const analysis = analyzeDictation(state.dictation.text, userText);
+      renderDictationComparison(analysis, state.dictation.text, userText);
+
+      document.getElementById("dictationScore").textContent =
+        analysis.stats.score + "%";
+      document.getElementById("statSpellErrors").textContent =
+        analysis.stats.spelling;
+      document.getElementById("statGrammarErrors").textContent =
+        analysis.stats.wrong;
+      document.getElementById("statMissingWords").textContent =
+        analysis.stats.missing;
+      document.getElementById("statExtraWords").textContent =
+        analysis.stats.extra;
+      document.getElementById("dictationScoreWrap").style.display = "block";
+
+      updateDictationStatsOnProgress(analysis.stats);
+    }
+
+    // ---------- Sentence trainer logic ----------
+    let currentSentenceItem = null;
+
+    function newSentencePrompt() {
+      const level = getCurrentLevel();
+      const bank = sentenceBank[level] || sentenceBank.beginner;
+      currentSentenceItem = pickRandom(bank);
+      const el = document.getElementById("sentencePrompt");
+      if (el && currentSentenceItem) {
+        el.innerHTML =
+          "<strong>Rewrite this sentence:</strong><br>" +
+          '"' +
+          currentSentenceItem.bad +
+          '"';
+      }
+      const input = document.getElementById("sentenceInput");
+      if (input) {
+        input.value = "";
+        input.focus();
+      }
+      const sug = document.getElementById("sentenceSuggestion");
+      if (sug) {
+        sug.textContent =
+          "Write your version first. Then click “Show suggestion”.";
+      }
+    }
+
+    function checkSentence() {
+      if (!currentSentenceItem) {
+        alert("Click “New sentence” first.");
+        return;
+      }
+      const input = document.getElementById("sentenceInput");
+      if (!input) return;
+      const user = input.value.trim();
+      const suggestion = document.getElementById("sentenceSuggestion");
+      if (!user) {
+        suggestion.innerHTML =
+          "<strong>Suggestion:</strong> " +
+          currentSentenceItem.good +
+          "<br><span class='muted'>" +
+          currentSentenceItem.tip +
+          "</span>";
+        return;
+      }
+      const normUser = normalizeTextForCompare(user);
+      const normGood = normalizeTextForCompare(currentSentenceItem.good);
+      const ed = editDistance(normUser, normGood);
+      const maxLen = Math.max(normUser.length, normGood.length) || 1;
+      const similarity = 1 - ed / maxLen;
+      let comment = "";
+      if (similarity > 0.7) {
+        comment = "✅ Your sentence is very close to the suggested version.";
+      } else if (similarity > 0.4) {
+        comment = "👍 Your sentence is okay, but you can make it shorter.";
+      } else {
+        comment = "💡 Try to remove extra words and use simpler phrases.";
+      }
+      suggestion.innerHTML =
+        "<strong>Suggestion:</strong> " +
+        currentSentenceItem.good +
+        "<br><span class='muted'>" +
+        currentSentenceItem.tip +
+        "<br>" +
+        comment +
+        "</span>";
+    }
+
+    // ---------- Spelling trainer logic ----------
+    function getSpellingLevelOverride() {
+      const sel = document.getElementById("spellingLevelSelect");
+      if (!sel) return "auto";
+      return sel.value || "auto";
+    }
+
+    function chooseSpellingLevel() {
+      const override = getSpellingLevelOverride();
+      if (override === "auto") return getCurrentLevel();
+      return override;
+    }
+
+    function newSpellingWord() {
+      const level = chooseSpellingLevel();
+      const words = spellingWords[level] || spellingWords.beginner;
+      state.spellingWord = pickRandom(words);
+      const prompt = document.getElementById("spellingPrompt");
+      if (prompt) {
+        prompt.textContent =
+          "Click “Play word” and type the word you hear. Level: " + level + ".";
+      }
+      const input = document.getElementById("spellingInput");
+      if (input) {
+        input.value = "";
+        input.focus();
+      }
+      const feedback = document.getElementById("spellingFeedback");
+      if (feedback) feedback.textContent = "";
+    }
+
+    function playSpellingWord() {
+      if (!state.spellingWord) {
+        alert("Click “New word” first.");
+        return;
+      }
+      speakText(state.spellingWord, 0.9);
+    }
+
+    function checkSpellingWord() {
+      if (!state.spellingWord) {
+        alert("Click “New word” first.");
+        return;
+      }
+      const input = document.getElementById("spellingInput");
+      const feedback = document.getElementById("spellingFeedback");
+      if (!input || !feedback) return;
+      const user = input.value.trim().toLowerCase();
+      if (!user) {
+        feedback.textContent = "Type the word you hear first.";
+        return;
+      }
+      state.progress.spellingAsked += 1;
+      if (user === state.spellingWord.toLowerCase()) {
+        state.progress.spellingCorrect += 1;
+        feedback.textContent = "✅ Correct! Well done.";
+      } else {
+        feedback.textContent =
+          "❌ Not correct. The correct spelling is: “" +
+          state.spellingWord +
+          "”.";
+      }
+      saveProgress();
+      updateTopStats();
+      updateDashboard();
+    }
+
+    // ---------- Grammar trainer logic ----------
+    let currentGrammarItem = null;
+
+    function getGrammarLevelOverride() {
+      const sel = document.getElementById("grammarLevelSelect");
+      if (!sel) return "auto";
+      return sel.value || "auto";
+    }
+
+    function chooseGrammarLevel() {
+      const override = getGrammarLevelOverride();
+      if (override === "auto") return getCurrentLevel();
+      return override;
+    }
+
+    function newGrammarQuestion() {
+      const level = chooseGrammarLevel();
+      const bank = grammarQuestions[level] || grammarQuestions.beginner;
+      currentGrammarItem = pickRandom(bank);
+      const qText = document.getElementById("grammarQuestionText");
+      const ansArea = document.getElementById("grammarAnswerArea");
+      const feedback = document.getElementById("grammarFeedback");
+      if (feedback) feedback.textContent = "";
+      if (!currentGrammarItem || !qText || !ansArea) return;
+
+      if (currentGrammarItem.type === "mcq") {
+        qText.innerHTML = "<strong>Question:</strong> " + currentGrammarItem.question;
+        let html = "<ul style='list-style-type:none; padding-left:0; font-size:0.9rem;'>";
+        currentGrammarItem.options.forEach((opt, idx) => {
+          html +=
+            "<li style='margin:0.2rem 0;'><label><input type='radio' name='grammarMcq' value='" +
+            idx +
+            "'> " +
+            opt +
+            "</label></li>";
+        });
+        html += "</ul>";
+        ansArea.innerHTML = html;
+      } else if (currentGrammarItem.type === "fill") {
+        qText.innerHTML = "<strong>Complete:</strong> " + currentGrammarItem.question;
+        ansArea.innerHTML =
+          "<input type='text' id='grammarFillInput' placeholder='" +
+          (currentGrammarItem.placeholder || "Type your answer") +
+          "' />";
+      } else if (currentGrammarItem.type === "error") {
+        qText.innerHTML =
+          "<strong>" +
+          currentGrammarItem.question +
+          "</strong><br>“" +
+          currentGrammarItem.sentence +
+          "”";
+        ansArea.innerHTML =
+          "<textarea id='grammarErrorInput' placeholder='Rewrite the sentence correctly...'></textarea>";
+      }
+    }
+
+    function checkGrammarAnswer() {
+      if (!currentGrammarItem) {
+        alert("Click “New question” first.");
+        return;
+      }
+      const feedback = document.getElementById("grammarFeedback");
+      if (!feedback) return;
+
+      let correct = false;
+      let userAnswer = "";
+
+      if (currentGrammarItem.type === "mcq") {
+        const chosen = document.querySelector("input[name='grammarMcq']:checked");
+        if (!chosen) {
+          feedback.textContent = "Please choose an answer first.";
+          return;
+        }
+        const idx = parseInt(chosen.value, 10);
+        userAnswer = currentGrammarItem.options[idx];
+        if (idx === currentGrammarItem.answerIndex) {
+          correct = true;
+        }
+      } else if (currentGrammarItem.type === "fill") {
+        const inp = document.getElementById("grammarFillInput");
+        if (!inp) return;
+        userAnswer = inp.value.trim().toLowerCase();
+        if (!userAnswer) {
+          feedback.textContent = "Type your answer first.";
+          return;
+        }
+        if (userAnswer === currentGrammarItem.answer.toLowerCase()) {
+          correct = true;
+        }
+      } else if (currentGrammarItem.type === "error") {
+        const inp = document.getElementById("grammarErrorInput");
+        if (!inp) return;
+        userAnswer = inp.value.trim();
+        if (!userAnswer) {
+          feedback.textContent = "Rewrite the sentence first.";
+          return;
+        }
+        feedback.innerHTML =
+          "✅ Suggested correction: “" +
+          currentGrammarItem.correction +
+          "”.<br><span class='muted'>" +
+          currentGrammarItem.explanation +
+          "</span>";
+        return;
+      }
+
+      state.progress.grammarAnswered += 1;
+      if (correct) {
+        state.progress.grammarCorrect += 1;
+        feedback.innerHTML =
+          "✅ Correct!<br><span class='muted'>" +
+          currentGrammarItem.explanation +
+          "</span>";
+      } else {
+        if (currentGrammarItem.type === "mcq") {
+          const correctSentence =
+            currentGrammarItem.options[currentGrammarItem.answerIndex];
+          feedback.innerHTML =
+            "❌ Not correct. The correct answer is: “" +
+            correctSentence +
+            "”.<br><span class='muted'>" +
+            currentGrammarItem.explanation +
+            "</span>";
+        } else {
+          feedback.innerHTML =
+            "❌ Not correct. The correct answer is: “" +
+            currentGrammarItem.answer +
+            "”.<br><span class='muted'>" +
+            currentGrammarItem.explanation +
+            "</span>";
+        }
+      }
+      saveProgress();
+      updateTopStats();
+      updateDashboard();
+    }
+
+    // ---------- Daily practice ----------
+    function getTodayDateString() {
+      const d = new Date();
+      return d.getFullYear() + "-" + (d.getMonth() + 1) + "-" + d.getDate();
+    }
+
+    function generateDailyPractice() {
+      const today = getTodayDateString();
+      const level = getCurrentLevel();
+      const dictText = pickRandom(dailyDictations);
+      const words = spellingWords[level] || spellingWords.beginner;
+      const spellWord = pickRandom(words);
+      const gBank = grammarQuestions[level] || grammarQuestions.beginner;
+      const gItem = pickRandom(gBank);
+
+      state.daily = {
+        date: today,
+        dictText,
+        spellingWord: spellWord,
+        grammarId: gItem.id,
+        grammarLevel: level,
+      };
+      saveDaily();
+
+      const list = document.getElementById("dailyList");
+      if (list) {
+        list.innerHTML =
+          "<li>Short dictation: “" +
+          dictText +
+          "”</li>" +
+          "<li>Grammar question level: " +
+          level +
+          "</li>" +
+          "<li>Spelling word (hidden, you will hear it): ready</li>";
+      }
+
+      document.getElementById("gotoDailyDictationBtn").disabled
